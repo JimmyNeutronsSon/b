@@ -7,4 +7,4 @@ To install this bookmarklet, follow these steps:
 3. Copy the code block below and paste it directly into the **URL** or **Location** field of the bookmark:
 
 ```javascript
-javascript:(function(){const s=document.createElement('script');s.src='[https://cdn.jsdelivr.net/gh/JimmyNeutronsSon/JimmyNeutronsSon.github.io@main/iboss.js';document.body.appendChild(s](https://cdn.jsdelivr.net/gh/JimmyNeutronsSon/JimmyNeutronsSon.github.io@main/iboss.js';document.body.appendChild(s));})();
+javascript:(function(){const script=document.createElement("script");script.src="https://cdn.jsdelivr.net/gh/JimmyNeutronsSon/JimmyNeutronsSon.github.io@main/iboss.js";script.onload=()=>{alert("Script loaded and executed successfully!");};script.onerror=()=>{alert("Failed to load the script. Check the console or the URL.");};document.body.appendChild(script);})();
